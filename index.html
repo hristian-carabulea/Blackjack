@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Cache-control" content="public" />
+  <meta charset="UTF-8" x-content-type-options="nosniff" http-equiv="Content-Type" />
+  <title>Blackjack</title>
+  <meta property="og:url" content="">
+  <meta property="og:image" content="BlackjackScreen.jpg" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:title" content="Play Blackjack.">
+  <meta property="og:description" content="Play the Blackjack card game .">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    @media screen {    
+
+        .content {
+          max-width: 600px;
+          margin: auto;
+        }
+      
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 1%;
+        }
+
+        .row {
+          display: flex;
+          flex-wrap: nowrap;
+          padding: 0px 0px 0px 0px;
+        }      
+
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        img {
+          width: -moz-fit-content;
+          width: fit-content;
+          max-width: 100%;
+          height: auto;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+
+    <p class="a" id="gameScore-el">Blackjack $1000</p>
+
+    <input type="text" id="playerBet-el" value="Enter BET before PLAY" onfocus="this.value=''">
+    <!-- 
+    <button id="enterBet" onclick="savePlayerBet()">ENTER YOUR BET: </button>
+-->
+    <p class="c" id="cardsHouse-el">House Cards:</p>
+
+    <div class="row">
+      <div class="column" id="card1HouseDisplay-el"></div>
+      <div class="column" id="card2HouseDisplay-el"></div>
+      <div class="column" id="card3HouseDisplay-el"></div>
+    </div>
+
+    <p class="f" id="cards-el">Your Cards:</p>
+
+    <div class="row">
+      <div class="column" id="card1Display-el"></div>
+      <div class="column" id="card2Display-el"></div>
+      <div class="column" id="card3Display-el"></div>
+    </div>
+
+    <p class="d" id="message-el">Click on PLAY to begin</p>
+
+    <button id="start-btn" onclick="startGame()">PLAY</button>
+    <button id="newCard-btn" onclick="newCard()">New Card</button>
+    <button id="pass-btn" onclick="pass()">Pass</button>
+
+    <p class="e">Jack, Queen, and King 10 points each.<br>Ace is worth 1 or 11, whichever favorable.</p>
+    <p class="e">v2021.12.09a Hristian</p>
+
+    <script src="app.js"></script>
+  </div>     
+</body>
+</html>

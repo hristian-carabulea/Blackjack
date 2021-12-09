@@ -1,0 +1,117 @@
+/* v2021.10.10b Hristian */
+p.a {
+    font-size: 175%;
+    line-height: 100%;
+    color: black;
+    padding: 2% 0% 1% 0%; /* top left bottom right */
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* line-height:  adjust to tweak weird fonts */;
+}
+
+p.b {
+    font-size: 125%;
+    font-style: normal;
+    font-weight: bold;    
+    color: red;
+    padding: 0% 0% 0% 0%;
+}
+
+p.g {
+    font-size: 125%;
+    font-style: normal;
+    font-weight: bold;    
+    color: darkblue;
+    padding: 0% 0% 0% 0%;    
+} 
+
+p.c {
+    font-size: 125%;
+    color: darkblue;
+    padding: 1% 0% 0% 0%;     
+} 
+
+p.d {
+    font-size: 175%;
+    color:red;
+    line-height: 100%;
+    padding: 1% 0% 1% 0%;
+} 
+
+p.e {
+    font-size: 100%;
+} 
+
+p.f {
+    font-size: 125%;
+    font-style: normal;
+    font-weight: bold;    
+    color:red;
+    line-height: 100%;
+    padding: 0% 0% 0% 0%;
+} 
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+body {
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 0px 0;
+    margin: 0;
+    text-align: center;
+}
+
+span {
+    border-bottom: 2px solid black;
+    padding: 0 px;
+}
+
+input {
+    width: 30%;
+    padding: 0.4em;
+    border: solid 2px;
+    color:#000000;
+    text-align: center;
+}
+
+button {
+    border: none;
+    color: black;
+    margin: 1% 1%;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+#enterBet {
+    background: #5f9341;
+    color: white;
+}
+
+#start-btn {
+    font-size: 150%;
+    border-radius: 10px;
+    color:snow;
+    background-color:blue;
+}
+
+#newCard-btn {
+    font-size: 150%;
+    border-radius: 10px;
+    color:white;
+    background-color: red;
+}
+
+#pass-btn {
+    font-size: 150%;
+    border-radius: 10px;
+    color:snow;
+    background-color:darkgreen;
+}
