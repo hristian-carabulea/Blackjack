@@ -1,5 +1,5 @@
 # Blackjack in HTML/CSS/JS
-#
+
 ## Play the game in a new window by pressing the Ctrl key and clicking on https://hristian-carabulea.github.io/Blackjack/
 ### 1. You must first enter a bet amount.
 ### 2. Then click on Play.
